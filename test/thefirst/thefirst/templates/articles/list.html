@@ -4,8 +4,8 @@
 
 {% block content %}
 
-    {% if latest_articles_list %}
-        {% for a in latest_articles_list %}
+    {% if latest_article_list %}
+        {% for a in latest_article_list %}
             <a href="{% url 'articles:detail' a.id %}">{{a.article_title}}</a>
         {% endfor %}
 
